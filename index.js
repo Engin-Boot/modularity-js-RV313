@@ -16,18 +16,18 @@ const MinorColors = [
     "slate"
 ];
 
-var get_Color_Reference = require("./get_Color_Pair.js");
-var get_Pair_Reference = require("./get_Color_Pair.js");
+var getColorFromPairNumber = require("./get_Color_Pair.js");
+var getPairFromColorNumber = require("./get_Color_Pair.js");
 
 function testNumberToPair(number, expectedMajor, expectedMinor) {
-    const pairOfColors = get_Pair_Reference(number);
+    const pairOfColors = getColorFromPairNumber(number);
     console.log(`${number} = ${expectedMajor} ${expectedMinor}`);
     expect(pairOfColors.major).equals(expectedMajor);
     expect(pairOfColors.minor).equals(expectedMinor);
 }
 
 function testColorToNumber(majorColor, minorColor, expectedNumber) {
-    const pairNumber = get_Color_Reference(majorColor, minorColor);
+    const pairNumber = getPairNumberFromColor(majorColor, minorColor);
     console.log(`${majorColor} ${minorColor} = ${pairNumber}`);
     expect(pairNumber).to.equal(expectedNumber);
 }
