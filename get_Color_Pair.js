@@ -24,5 +24,5 @@ function GetPairNumberFromColors(majorColor, minorColor) {
     return majorIndex * MinorColors.length + minorIndex + 1;
 }
 
-module.export(GetColorFromPairNumber);
-module.export(GetPairNumberFromColors);
+module.export= GetColorFromPairNumber;
+module.export= GetPairNumberFromColors;
