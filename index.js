@@ -20,14 +20,14 @@ var get_Color_Reference = require("./get_Color_Pair.js");
 var get_Pair_Reference = require("./get_Color_Pair.js");
 
 function testNumberToPair(number, expectedMajor, expectedMinor) {
-    const pairOfColors = GetColorFromPairNumber(number);
+    const pairOfColors = get_Pair_Reference(number);
     console.log(`${number} = ${expectedMajor} ${expectedMinor}`);
     expect(pairOfColors.major).equals(expectedMajor);
     expect(pairOfColors.minor).equals(expectedMinor);
 }
 
 function testColorToNumber(majorColor, minorColor, expectedNumber) {
-    const pairNumber = GetPairNumberFromColors(majorColor, minorColor);
+    const pairNumber = get_Color_Reference(majorColor, minorColor);
     console.log(`${majorColor} ${minorColor} = ${pairNumber}`);
     expect(pairNumber).to.equal(expectedNumber);
 }
