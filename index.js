@@ -17,7 +17,7 @@ const MinorColors = [
 ];
 
 var getColorFromPairNumber = require("./get_Color_Pair.js");
-var getPairFromColorNumber = require("./get_Color_Pair.js");
+var getPairNumberFromColor = require("./get_Color_Pair.js");
 
 function testNumberToPair(number, expectedMajor, expectedMinor) {
     const pairOfColors = getColorFromPairNumber(number);
