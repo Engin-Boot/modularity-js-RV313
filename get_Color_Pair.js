@@ -1,3 +1,21 @@
+
+const MajorColors = [
+    "white",
+    "red",
+    "black",
+    "yellow",
+    "violet"
+];
+
+const MinorColors = [
+    "blue",
+    "orange",
+    "green",
+    "brown",
+    "slate"
+];
+
+
 function GetColorFromPairNumber(pairNumber) {
     let colorPair = {};
     const zeroBasedPairNumber = pairNumber - 1;
@@ -24,5 +42,4 @@ function GetPairNumberFromColors(majorColor, minorColor) {
     return majorIndex * MinorColors.length + minorIndex + 1;
 }
 
-module.export= GetColorFromPairNumber;
-module.export= GetPairNumberFromColors;
+module.exports= {GetColorFromPairNumber,GetPairNumberFromColors};
