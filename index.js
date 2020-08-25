@@ -12,7 +12,7 @@ function testNumberToPair(number, expectedMajor, expectedMinor) {
 
 function testColorToNumber(majorColor, minorColor, expectedNumber) {
     const pairNumber = get_Reference.GetPairNumberFromColors(majorColor, minorColor);
-    console.log(`${majorColor} ${minorColor} = ${pairNumber}`);
+    console.log(`${pairNumber} = ${majorColor} ${minorColor}`);
     expect(pairNumber).to.equal(expectedNumber);
 }
 
