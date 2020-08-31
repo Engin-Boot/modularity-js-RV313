@@ -1,7 +1,8 @@
 const expect = require('chai').expect;
 
 var test_reference = require("./test.js");
-
+var toString_reference = require("./ToString.js");
+toString();
 
 console.log("color coder");
 test_reference.testNumberToPair(4, "white", "brown");
