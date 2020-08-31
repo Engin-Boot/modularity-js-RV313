@@ -2,9 +2,10 @@ const expect = require('chai').expect;
 
 
 var get_Reference = require("./get_Color_Pair.js");
+var str_Reference = require('./ToString.js');
 
 
-ToString();
+str_Reference.ToString();
 
 
 function testNumberToPair(number, expectedMajor, expectedMinor) {
