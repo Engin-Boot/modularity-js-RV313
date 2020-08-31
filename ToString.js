@@ -1,5 +1,5 @@
 var GetColorFromPairNumber_reference = require("./getColorFromPairNumber.js");
-function ToString()
+function toString()
 {   
     console.log("Pin Number" + " " + " Major" + " " + "Minor");
     
@@ -11,4 +11,4 @@ function ToString()
     
 }
 
-module.exports = ToString;
+module.export = toString;
