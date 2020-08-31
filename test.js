@@ -1,3 +1,5 @@
+const expect = require('chai').expect;
+
 var get_Reference = require("./get_Color_Pair.js");
 
 function testColorToNumber(majorColor, minorColor, expectedNumber) {
