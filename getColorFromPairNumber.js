@@ -1,6 +1,6 @@
 var MajorMinor_reference = require("./MajorMinor.js");
 
-function GetColorFromPairNumber(pairNumber) {
+function getColorFromPairNumber(pairNumber) {
     let colorPair = {};
     const zeroBasedPairNumber = pairNumber - 1;
     const majorColorIndex =
@@ -10,4 +10,4 @@ function GetColorFromPairNumber(pairNumber) {
     return colorPair
 }
 
-module.export = GetColorFromPairNumber;
+module.exports = getColorFromPairNumber;
