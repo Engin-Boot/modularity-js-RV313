@@ -1,9 +1,9 @@
-var MajorMinor_reference = require("./MajorMinor.js");
-
+var Major_reference = require("./MajorMinor.js").MajorColors;
+var Minor_reference = require("./MajorMinor.js").MinorColors;
 function getMajorIndex(majorColor){
     
-    for(var majorIndex = MajorMinor_reference.MajorColors.length; majorIndex >= 0; majorIndex--) {
-        if(MajorColors[majorIndex] == majorColor) {
+    for(var majorIndex = Major_reference.length; majorIndex >= 0; majorIndex--) {
+        if(Major_reference[majorIndex] == majorColor) {
             break;
         }
     }
@@ -13,8 +13,8 @@ function getMajorIndex(majorColor){
 
 function getMinorIndex(minorColor){
     
-    for( var minorIndex = MajorMinor_reference.MinorColors.length; minorIndex >= 0; minorIndex--) {
-        if(MinorColors[minorIndex] == minorColor) {
+    for( var minorIndex = Minor_reference.length; minorIndex >= 0; minorIndex--) {
+        if(Minor_reference[minorIndex] == minorColor) {
             break;
         }
     }

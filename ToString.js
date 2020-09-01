@@ -13,4 +13,4 @@ function ToString()
     
 }
 
-module.export = ToString;
+module.exports = ToString;

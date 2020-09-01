@@ -7,4 +7,4 @@ function getPairNumberFromColors(majorColor, minorColor) {
     return majorIndex * MajorMinor_reference.MinorColors.length + minorIndex + 1;
 }
 
-module.export = getPairNumberFromColors;
+module.exports = getPairNumberFromColors;
