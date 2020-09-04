@@ -1,14 +1,16 @@
 
+var { MajorColors, MinorColors } = require("./MajorMinor.js");
 var getColorFromPairNumber = require("./getColorFromPairNumber.js");
 function ToString()
 {   
+    var color_pair_sequence= {};
     console.log("Pin Number" + " " + " Major" + " " + "Minor");
     
-    for(var i=1;i<=25;i++)
+    for(var pinNumber=1 ; pinNumber<=MinorColors.length*MajorColors.length ; pinNumber++)
     {
-        var color_pair =getColorFromPairNumber(i);
+        color_pair_sequence =getColorFromPairNumber(pinNumber);
 
-        console.log(i + "=" + "{" + color_pair.major + " , " + color_pair.minor + "}");
+        console.log(pinNumber + "=" + "{" + color_pair_sequence.major + " , " + color_pair_sequence.minor + "}");
     }
     
 }

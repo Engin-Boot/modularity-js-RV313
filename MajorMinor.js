@@ -14,4 +14,7 @@ const MinorColors = [
     "slate"
 ];
 
-module.exports ={ MajorColors, MinorColors};
+module.exports ={
+    MajorColors: MajorColors,
+    MinorColors: MinorColors
+};

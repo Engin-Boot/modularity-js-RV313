@@ -1,12 +1,12 @@
 const expect = require('chai').expect;
 
-var test_reference = require("./test.js");
+var {testColorToNumber,testNumberToPair} = require("./test.js");
 
 console.log("color coder");
-test_reference.testNumberToPair(4, "white", "brown");
-test_reference.testNumberToPair(25, "violet", "slate");
-test_reference.testColorToNumber("black", "brown", 14);
-test_reference.testColorToNumber("yellow", "green", 18);
+testNumberToPair(4, "white", "brown");
+testNumberToPair(25, "violet", "slate");
+testColorToNumber("black", "brown", 14);
+testColorToNumber("yellow", "green", 18);
 
 var ToString = require("./ToString.js");
 ToString();

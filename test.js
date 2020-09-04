@@ -17,4 +17,5 @@ function testNumberToPair(number, expectedMajor, expectedMinor) {
     expect(pairOfColors.minor).equals(expectedMinor);
 }
 
-module.exports = {testColorToNumber,testNumberToPair};
+module.exports = {testColorToNumber : testColorToNumber,
+                testNumberToPair: testNumberToPair};
